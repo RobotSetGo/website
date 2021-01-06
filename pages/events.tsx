@@ -49,8 +49,9 @@ export default function Events() {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row flex-wrap">
-                {images.map((image) => (
+                {images.map((image, key) => (
                   <ImageCard
+                    key={key}
                     image={image.path}
                     customCss="m-6 "
                     description={image.description}
