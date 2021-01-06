@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function IconsTable({ info }) {
   return (
@@ -26,7 +27,7 @@ function InfoRow({ title, icon }) {
       <div className="flex items-center">
         <div className="mr-8">
           <span className="text-xl font-semibold inline-block py-2 px-6 uppercase rounded-full text-black bg-red-200 mr-3">
-            <i className={`fa fa-${icon}`}></i>
+            <FontAwesomeIcon icon={icon} style={{ width: "20px" }} />
           </span>
         </div>
         <div>

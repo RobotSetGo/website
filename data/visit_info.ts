@@ -1,59 +1,65 @@
+import {
+    faUser,
+    faClock,
+    faUsers
+} from "@fortawesome/free-solid-svg-icons";
+
 export const visit_dim = [
     {
         title: "Παιδιά Δημοτικού",
-        icon: "user",
+        icon: faUser,
     },
     {
         title: "2,5 ώρες",
-        icon: "clock",
+        icon: faClock,
     },
     {
         title: "50 με 60 άτομα (τα παιδιά χωρίζονται σε δύο ομάδες από 25 με 30 ατόμων  σε κάθε αίθουσα η ομάδα αποτελείται από 2 έως 3 παιδιά).",
-        icon: "users",
+        icon: faUsers,
     },
 ];
 
 export const visit_nip = [
     {
         title: "Παιδιά Νηπιαγωγείου",
-        icon: "user",
+        icon: faUser,
     },
     {
         title: "1 ώρα",
-        icon: "clock",
+        icon: faClock,
     },
     {
         title: "έως 40 άτομα (τα παιδιά χωρίζονται σε δύο ομάδες από 20 άτομα σε κάθε αίθουσα).",
-        icon: "users",
+        icon: faUsers,
     },
 ];
 
 export const visit_gym = [
     {
         title: "Παιδιά Γυμνασίου",
-        icon: "user",
+        icon: faUser,
     },
     {
         title: "2,5 ώρες",
-        icon: "clock",
+        icon: faClock,
     },
     {
         title: "50 με 60 άτομα (τα παιδιά χωρίζονται σε δύο ομάδες από 25 με 30 ατόμων  σε κάθε αίθουσα η ομάδα αποτελείται από 2 έως 3 παιδιά).",
-        icon: "users",
+        icon: faUsers,
     },
 ];
 
 export const visit_lyc = [
     {
         title: "Παιδιά Λυκείου",
-        icon: "user",
+        icon: faUser,
     },
     {
         title: "2,5 ώρες",
-        icon: "clock",
+        icon: faClock,
     },
     {
         title: "50 με 60 άτομα (τα παιδιά χωρίζονται σε δύο ομάδες από 25 με 30 ατόμων  σε κάθε αίθουσα η ομάδα αποτελείται από 2 έως 3 παιδιά).",
-        icon: "users",
+        icon: faUsers,
     },
 ];

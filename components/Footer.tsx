@@ -1,4 +1,16 @@
 import React, { ReactElement } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faMapMarker,
+  faPhone,
+  faBuilding,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Footer(): ReactElement {
   return (
@@ -26,28 +38,31 @@ function Footer(): ReactElement {
                 className="text-blue-600 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-facebook-square fa-lg"></i>
+                <FontAwesomeIcon
+                  icon={faFacebookSquare}
+                  style={{ width: "20px" }}
+                />
               </a>
               <a
                 href="https://www.instagram.com/robot_set_go/"
                 className="text-pink-400 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-instagram fa-lg"></i>
+                <FontAwesomeIcon icon={faInstagram} style={{ width: "20px" }} />
               </a>
               <a
                 href="https://twitter.com/Rodot_Set_go"
                 className="text-blue-400 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-twitter fa-lg"></i>
+                <FontAwesomeIcon icon={faTwitter} style={{ width: "20px" }} />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCxSRrd4JBJCL7hzwWcaPpAQ"
                 className="text-red-500 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-youtube fa-xl"></i>
+                <FontAwesomeIcon icon={faYoutube} style={{ width: "24px" }} />
               </a>
             </div>
           </div>
@@ -192,24 +207,33 @@ function Footer(): ReactElement {
           <div className="mt-4 text-sm w-full lg:w-6/12 px-4">
             <ul>
               <li className="mb-2">
-                <i className="flex fa fa-map-marker-alt text-lg"></i>
                 <a
                   href="https://www.google.com/maps/place/Robot+Set+Go/@40.4670326,22.9672916,17z/data=!4m13!1m7!3m6!1s0x14a814e5bbec1cf3:0xe978d2ac24d7a4d1!2zzpzOtc6zLiDOkc67zrXOvs6xzr3OtM-Bzr_PhSA2OCwgzqTPgc6vzrvOv8-Gzr_PgiA1NzUgMDA!3b1!8m2!3d40.4670326!4d22.9694803!3m4!1s0x14a814e5bbec1c5f:0xa65bafef38df2ae4!8m2!3d40.4670246!4d22.9694804"
                   target="_blank"
-                  className="ml-4"
+                  className="flex"
                 >
+                  <FontAwesomeIcon
+                    icon={faMapMarker}
+                    style={{ width: "15px", marginRight: "10px" }}
+                  />
                   Μ.Αλεξάνδρου 68, Τρίλοφος Θεσσαλονίκης
                 </a>
               </li>
               <li className="mb-2">
-                <i className="flex fa fa-mobile-alt text-lg"></i>
-                <a href="tel:+306944140426" className="ml-4" target="_blank">
+                <a href="tel:+306944140426" className="flex" target="_blank">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ width: "15px", marginRight: "10px" }}
+                  />
                   +306944140426
                 </a>
               </li>
               <li className="mb-2">
-                <i className="flex fa fa-phone"></i>
-                <a href="tel:+302392400370" className="ml-4" target="_blank">
+                <a href="tel:+302392400370" className="flex" target="_blank">
+                  <FontAwesomeIcon
+                    icon={faBuilding}
+                    style={{ width: "15px", marginRight: "10px" }}
+                  />
                   2392400370
                 </a>
               </li>

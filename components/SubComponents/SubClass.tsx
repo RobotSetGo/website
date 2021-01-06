@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SubClass({ settings, title, icon, description, link }) {
   return (
@@ -6,7 +7,8 @@ export default function SubClass({ settings, title, icon, description, link }) {
       <div
         className={`text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-${settings.icon_color} inline-flex items-center justify-center`}
       >
-        <i className={`text-${settings.icon_size} ${icon}`}></i>
+        {/* <i className={`text-${settings.icon_size} ${icon}`}></i> */}
+        <FontAwesomeIcon icon={icon} style={{ width: "20px" }} />
       </div>
       <a
         href={link}

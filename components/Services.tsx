@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faUniversity } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUniversity,
+  faBirthdayCake,
+  faChalkboardTeacher,
+  faUserFriends,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Services({ services }) {
   return (
@@ -31,7 +35,10 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <i className={services.small.middle.icon}></i>
+                  <FontAwesomeIcon
+                    icon={faChalkboardTeacher}
+                    style={{ width: "40px" }}
+                  />
                 </div>
                 <a href="/seminars" className="block text-xl font-semibold">
                   {services.small.middle.title}
@@ -47,7 +54,10 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <i className={services.small.right.icon}></i>
+                  <FontAwesomeIcon
+                    icon={faBirthdayCake}
+                    style={{ width: "40px" }}
+                  />
                 </div>
                 <a href="/events" className="block text-xl font-semibold">
                   {services.small.right.title}
@@ -63,7 +73,7 @@ export default function Services({ services }) {
         <div className="flex flex-wrap items-center mt-32">
           <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
             <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
-              <i className="fas fa-user-friends text-xl"></i>
+              <FontAwesomeIcon icon={faUserFriends} style={{ width: "40px" }} />
             </div>
             <h3 className="text-3xl mb-2 font-semibold leading-normal">
               {services.large.first.title}

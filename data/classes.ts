@@ -1,8 +1,16 @@
+import {
+    faRobot,
+    faMicrochip,
+    faCube,
+    faLaptop,
+    faCode
+} from "@fortawesome/free-solid-svg-icons";
+
 export const title = "Τμήματα";
 export const description = "Τα μαθήματα γίνονται από έμπειρο προσωπικό που είναι πιστοποιημένα από την Lego με τίτλους CERTIFICATION LEGO MINDSTORMS EDUCATION EV3 και CERTIFICATION LEGO WEDO 2.0. Επίσης όλο το προσωπικό είναι πτυχιούχοι πανεπιστημίων με μεταπτυχιακές σπουδές και εξειδίκευση στον τομέα διδασκαλίας τους.";
 export const classes = [
     {
-        icon: "fa fa-robot",
+        icon: faRobot,
         title: "Εκπαιδετυτική Ρομποτική",
         link: "/robotics",
         description: [
@@ -13,9 +21,9 @@ export const classes = [
         ]
     },
     {
-        icon: "fa fa-code",
+        icon: faCode,
         title: "Προγραμματισμός",
-        link: "/code",
+        link: "/coding",
         description: [
             "HTML, Css, Javascript",
             "Laravel, React, Vue, Databases",
@@ -25,7 +33,7 @@ export const classes = [
         ]
     },
     {
-        icon: "fa fa-microchip",
+        icon: faMicrochip,
         title: "Αυτοματισμοί",
         link: "/arduino",
         description: [
@@ -34,13 +42,13 @@ export const classes = [
         ]
     },
     {
-        icon: "fa fa-cube",
+        icon: faCube,
         title: "3D Σχεδίαση",
         link: "/3d",
         description: ["Σχεδίαση και εκμάθηση 3D Printer"]
     },
     {
-        icon: "fa fa-laptop",
+        icon: faLaptop,
         title: "Εξ' αποστάσεως",
         link: "/distance",
         description: [
