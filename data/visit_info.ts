@@ -30,7 +30,7 @@ export const visit_nip = [
 
 export const visit_gym = [
     {
-        title: "Παιδιά Δημοτικού",
+        title: "Παιδιά Γυμνασίου",
         icon: "user",
     },
     {
@@ -45,7 +45,7 @@ export const visit_gym = [
 
 export const visit_lyc = [
     {
-        title: "Παιδιά Δημοτικού",
+        title: "Παιδιά Λυκείου",
         icon: "user",
     },
     {

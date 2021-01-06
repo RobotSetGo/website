@@ -60,9 +60,15 @@ export default function Robotics() {
     }
     return "border-transparent";
   }
+
   return (
     <Layout title="Robot Set Go">
-      <Hero title={data.title} subtitle={data.subtitle} bgImage={data.image} />
+      <Hero
+        title={data.title}
+        subtitle={data.subtitle}
+        bgImage={data.image}
+        minHeight="60vh"
+      />
       <section className="pb-32 bg-white">
         <div className="container mx-auto px-4">
           <nav className="bg-white px-8 pt-2 shadow-md">

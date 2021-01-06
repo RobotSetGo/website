@@ -1,12 +1,18 @@
 import React from "react";
 
-export default function Hero({ title, subtitle, bgImage = null }) {
+export default function Hero({
+  title,
+  subtitle,
+  bgImage = null,
+  minHeight = "90vh",
+  customImage = null,
+}) {
   return (
     <div
       id="hero"
       className="relative pt-16 pb-32 flex content-center items-center justify-center"
       style={{
-        minHeight: "50vh",
+        minHeight: minHeight,
       }}
     >
       <div
@@ -26,6 +32,9 @@ export default function Hero({ title, subtitle, bgImage = null }) {
             <div className="pr-12">
               <h1 className="text-white font-semibold text-5xl">{title}</h1>
               <p className="mt-4 text-lg text-gray-300">{subtitle}</p>
+              {customImage ? (
+                <img className="block mx-auto h-24 mt-6" src={customImage} />
+              ) : null}
             </div>
           </div>
         </div>

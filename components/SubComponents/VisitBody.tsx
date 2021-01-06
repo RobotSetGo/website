@@ -2,7 +2,7 @@ import React from "react";
 import DimotikoParts from "./VisitParts/DimotikoParts";
 import NipiaParts from "./VisitParts/NipiaParts";
 import GymnasioParts from "./VisitParts/GymnasioParts";
-import LyceioParts from "./VisitParts/LyceioParts";
+import LyceioParts from "./VisitParts/LykeioParts";
 
 interface VisitBodyProps {
   level: string;

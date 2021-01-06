@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import ClassesTable from "../components/SubComponents/ClassesTable";
+import IconsTable from "../components/SubComponents/IconsTable";
 import { info3D as info } from "../data/class_info";
 
 export default function threeD() {
@@ -11,6 +11,7 @@ export default function threeD() {
         title="Τρισδιάστατη Σχεδίαση (3D)"
         subtitle="Η ROBOTSETGO παρουσιάζει την τρισδιάστατη απεικόνιση αντικειμένων και χώρων μέσω σχεδιασμού από ειδικά προγράμματα που δίνει την δυνατότητα στα παιδιά και σε άτομα όλων των ηλικιών να αντιληφθούν μεγάλες έννοιες της καθημερινότητας με έναν ευχάριστο και διασκεδαστικό τρόπο, αλλά παράλληλα παραγωγικό και οργανωτικό."
         bgImage={require("../assets/img/3d.jpg")}
+        minHeight="60vh"
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-6">
@@ -45,7 +46,7 @@ export default function threeD() {
         </div>
       </section>
 
-      <ClassesTable info={info} />
+      <IconsTable info={info} />
     </Layout>
   );
 }

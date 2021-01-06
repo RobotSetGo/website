@@ -24,7 +24,7 @@ export default function NipiaParts() {
       </div>
 
       <div className="pt-2">
-        <span className="font-bold text-blue-700">1η Ενότητα: </span>
+        <span className="block font-bold text-blue-700">1η Ενότητα: </span>
         Κατά την προέλευση τους τα παιδιά συγκεντρώνονται στην αμφιθεατρική
         αίθουσα. Η αίθουσα είναι χωρητικότητας 60 ατόμων. Διαθέτει
         videoprojector και ηλεκτρονικό υπολογιστή. Ακόμη υπάρχει ρομποτική πίστα
@@ -49,7 +49,7 @@ export default function NipiaParts() {
       </div>
 
       <div className="pt-2">
-        <span className="font-bold text-blue-700">2η Ενότητα: </span>
+        <span className="block font-bold text-blue-700">2η Ενότητα: </span>
         <div>
           Χωρίζονται σε ομάδες των 10 ατόμων στις 2 αίθουσες. Κάθε ομάδα
           παρακολουθεί τις σχετικές οδηγίες που θα δοθούν από το δάσκαλο για τη

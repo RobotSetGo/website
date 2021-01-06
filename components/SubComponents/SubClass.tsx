@@ -10,15 +10,15 @@ export default function SubClass({ settings, title, icon, description, link }) {
       </div>
       <a
         href={link}
-        className={`text-xl mt-5 px-2 font-semibold text-${settings.title_color}`}
+        className={`block text-xl mt-5 px-2 font-semibold text-${settings.title_color}`}
       >
         {title}
       </a>
       <p className={`mt-2 mb-4 text-${settings.description_text_color}`}>
         {description.map((item) => (
-          <li key={item} className="text-sm">
+          <span key={item} className="block text-sm">
             {item}
-          </li>
+          </span>
         ))}
       </p>
     </div>

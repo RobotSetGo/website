@@ -9,12 +9,13 @@ export default function company() {
         title="Σχετικά με την εταιρία"
         subtitle="Η Robot set go είναι μια αναπτυσσόμενη αστική μη κερδοσκοπική εταιρία που ιδρύθηκε το 2016 και στοχεύει  στην  εκμάθηση υψηλής τεχνολογίας σε όλες τις ηλικιακές ομάδες. Σε αυτήν την προσπάθεια υπάρχουν συνεργασίες με τα Πανεπιστημιακά Ιδρύματα   καθώς επίσης με ιδιωτικά ιδρύματα  & άλλες αστικές μη κερδοσκοπικές εταιρίες ."
         bgImage={require("../assets/img/company/1.jpg")}
+        minHeight="60vh"
       />
       <section className="pb-40 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center mt-32">
+          <div className="flex flex-wrap items-center mt-12">
             <div className="w-full md:w-10/12 px-4 mr-auto ml-auto">
-              <h3 className="text-3xl mb-2 font-semibold leading-normal">
+              <h3 className="text-3xl mb-2 font-semibold leading-normal text-center">
                 Αστικός Μη κερδοσκοπικός Οργανισμός Robot Set Go
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
@@ -93,10 +94,24 @@ export default function company() {
                 </div>
               </p>
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+                href="/company_images"
                 className="font-bold text-gray-800 mt-8"
               >
-                Πατήστε για να δείτε φωτογραφίες της σχολής
+                Πατήστε εδώ για να δείτε φωτογραφίες της σχολής
+              </a>
+
+              <a
+                href="/synergasies"
+                className="block font-bold text-gray-800 mt-8"
+              >
+                Συνεργασίες
+              </a>
+
+              <a
+                href="/company_images"
+                className="block font-bold text-gray-800 mt-8"
+              >
+                ΕΣΠΑ
               </a>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 function Footer(): ReactElement {
   return (
-    <footer id="footer" className="relative bg-gray-300 pt-8 pb-6">
+    <footer id="footer" className="relative bg-gray-300 pt-16 pb-6">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
         style={{ height: "80px", transform: "translateZ(0)" }}
@@ -21,30 +21,34 @@ function Footer(): ReactElement {
               Λυκείου
             </h5>
             <div className="mt-6">
-              <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-12 w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              <a
+                href="https://www.facebook.com/robotsetgo/?fref=ts"
+                className="text-blue-600 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-twitter"></i>
-              </button>
-              <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-12 w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                <i className="flex fab fa-facebook-square fa-lg"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/robot_set_go/"
+                className="text-pink-400 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-facebook-square"></i>
-              </button>
-              <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-12 w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                <i className="flex fab fa-instagram fa-lg"></i>
+              </a>
+              <a
+                href="https://twitter.com/Rodot_Set_go"
+                className="text-blue-400 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-instagram"></i>
-              </button>
-              <button
-                className="bg-white text-red-500 shadow-lg font-normal h-12 w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                <i className="flex fab fa-twitter fa-lg"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCxSRrd4JBJCL7hzwWcaPpAQ"
+                className="text-red-500 text-center mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-youtube"></i>
-              </button>
+                <i className="flex fab fa-youtube fa-xl"></i>
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -104,7 +108,7 @@ function Footer(): ReactElement {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                      href="/visit"
                     >
                       Εκπαιδευτική Επίσκεψη
                     </a>
@@ -112,7 +116,7 @@ function Footer(): ReactElement {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms"
+                      href="/events"
                     >
                       Εκδηλώσεις
                     </a>
@@ -120,15 +124,15 @@ function Footer(): ReactElement {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms"
+                      href="/seminars"
                     >
-                      Σεμηνάρια
+                      Επιμόρφωση
                     </a>
                   </li>
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy"
+                      href="/company"
                     >
                       Η Εταιρία
                     </a>
@@ -136,7 +140,47 @@ function Footer(): ReactElement {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us"
+                      href="/teachers_message"
+                    >
+                      Προς Καθηγητές
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/visit_stats"
+                    >
+                      Επισκέψεις Σχολείων
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/synergasies"
+                    >
+                      Συνεργασίες
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/synergasies"
+                    >
+                      Φωτογραφίες Σχολής
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/espa"
+                    >
+                      ΕΣΠΑ
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="/contact"
                     >
                       Επικοινωνία
                     </a>
@@ -145,21 +189,38 @@ function Footer(): ReactElement {
               </div>
             </div>
           </div>
+          <div className="mt-4 text-sm w-full lg:w-6/12 px-4">
+            <ul>
+              <li className="mb-2">
+                <i className="flex fa fa-map-marker-alt text-lg"></i>
+                <a
+                  href="https://www.google.com/maps/place/Robot+Set+Go/@40.4670326,22.9672916,17z/data=!4m13!1m7!3m6!1s0x14a814e5bbec1cf3:0xe978d2ac24d7a4d1!2zzpzOtc6zLiDOkc67zrXOvs6xzr3OtM-Bzr_PhSA2OCwgzqTPgc6vzrvOv8-Gzr_PgiA1NzUgMDA!3b1!8m2!3d40.4670326!4d22.9694803!3m4!1s0x14a814e5bbec1c5f:0xa65bafef38df2ae4!8m2!3d40.4670246!4d22.9694804"
+                  target="_blank"
+                  className="ml-4"
+                >
+                  Μ.Αλεξάνδρου 68, Τρίλοφος Θεσσαλονίκης
+                </a>
+              </li>
+              <li className="mb-2">
+                <i className="flex fa fa-mobile-alt text-lg"></i>
+                <a href="tel:+306944140426" className="ml-4" target="_blank">
+                  +306944140426
+                </a>
+              </li>
+              <li className="mb-2">
+                <i className="flex fa fa-phone"></i>
+                <a href="tel:+302392400370" className="ml-4" target="_blank">
+                  2392400370
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr className="my-6 border-gray-400" />
+        <hr className="my-12 border-gray-400" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()} Robot Set Go.
-              <span className="block py-2">
-                Made with ❤️ by &nbsp;
-                <a
-                  href="https://golabacademy.gr"
-                  className="text-green-600 hover:text-yellow-600"
-                >
-                  Go Lab Academy
-                </a>
-              </span>
             </div>
           </div>
         </div>

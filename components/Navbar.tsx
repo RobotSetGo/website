@@ -24,7 +24,10 @@ function Navbar(props: Props): ReactElement {
             }
             href="/"
           >
-            Robot Set Go
+            <img
+              src={require("../assets/img/logo-wide.png")}
+              style={{ height: "30px" }}
+            />
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -55,7 +58,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="/robotics"
+                href="/#classes"
               >
                 ΤΜΗΜΑΤΑ
               </a>
@@ -68,7 +71,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="/robotics"
+                href="/visit"
               >
                 ΕΚ. ΕΚΔΡΟΜΗ
               </a>
@@ -81,9 +84,9 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="/robotics"
+                href="/seminars"
               >
-                ΣΕΜΙΝΑΡΙΑ
+                ΕΠΙΜΟΡΦΩΣΗ
               </a>
             </li>
             <li className="flex items-center">
@@ -94,7 +97,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="/robotics"
+                href="/company"
               >
                 ΕΤΑΙΡΙΑ
               </a>
@@ -109,7 +112,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://www.facebook.com/robotsetgo"
               >
                 <i
                   className={
@@ -119,7 +122,7 @@ function Navbar(props: Props): ReactElement {
                     " fab fa-facebook text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Share</span>
+                <span className="lg:hidden inline-block ml-2">Facebook</span>
               </a>
             </li>
 
@@ -131,7 +134,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://twitter.com/Rodot_Set_go"
               >
                 <i
                   className={
@@ -140,7 +143,7 @@ function Navbar(props: Props): ReactElement {
                       : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Tweet</span>
+                <span className="lg:hidden inline-block ml-2">Twitter</span>
               </a>
             </li>
 
@@ -152,7 +155,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://www.instagram.com/robot_set_go/"
               >
                 <i
                   className={
@@ -162,7 +165,7 @@ function Navbar(props: Props): ReactElement {
                     " fab fa-instagram text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Star</span>
+                <span className="lg:hidden inline-block ml-2">Instagram</span>
               </a>
             </li>
 
@@ -174,7 +177,7 @@ function Navbar(props: Props): ReactElement {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://www.youtube.com/channel/UCxSRrd4JBJCL7hzwWcaPpAQ"
               >
                 <i
                   className={
@@ -183,7 +186,7 @@ function Navbar(props: Props): ReactElement {
                       : "text-gray-500") + " fab fa-youtube text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Star</span>
+                <span className="lg:hidden inline-block ml-2">Youtube</span>
               </a>
             </li>
 

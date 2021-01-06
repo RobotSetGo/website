@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import ClassesTable from "../components/SubComponents/ClassesTable";
+import IconsTable from "../components/SubComponents/IconsTable";
 import { info3D as info } from "../data/class_info";
 
 export default function Coding() {
@@ -11,6 +11,7 @@ export default function Coding() {
         title="Υπολογιστές και Προγραμματισμός"
         subtitle="Η σειρά μαθημάτων απευθύνεται από πολύ αρχάριους (που δεν γνωρίζουν τίποτα από υπολογιστές) μέχρι και πολύ προχωρημένους και σε όλες τις ηλικιακές ομάδες. Στόχος των μαθημάτων είναι ο σωστός χειρισμός των ηλεκτρονικών υπολογιστών καθώς και η εισαγωγή στον κόσμο του προγραμματισμού"
         bgImage={require("../assets/img/coding.jpg")}
+        minHeight="60vh"
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-4">
@@ -60,7 +61,7 @@ export default function Coding() {
         </div>
       </section>
 
-      <ClassesTable info={info} />
+      <IconsTable info={info} />
     </Layout>
   );
 }

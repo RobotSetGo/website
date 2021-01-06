@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageCard from "../../ImageCard";
 
 export default function DimotikoParts() {
   const [infoTab, setInfoTab] = useState(1);
@@ -64,10 +65,16 @@ function CustomParts({ part }) {
           Όπως και τα μαθήματα, έτσι και αυτή η μεμονωμένη δραστηριότητα είναι
           βασισμένη πάνω σε μία θεματολογία. Στην προτεινόμενη δραστηριότητα η
           θεματική ενότητα είναι οι Ολυμπιακοί Αγώνες στην αρχαιότητα.
+          <div className="p-8 flex items-center justify-center">
+            <ImageCard
+              image={require("../../../assets/img/pali.jpg")}
+              description="Αγώνας πάλης στην αρχαιότητα"
+            />
+          </div>
         </div>
 
         <div className="pt-2">
-          <span className="font-bold text-blue-700">1η Ενότητα: </span>
+          <span className="block font-bold text-blue-700">1η Ενότητα: </span>
           Κατά την προέλευση τους τα παιδιά συγκεντρώνονται στην αμφιθεατρική
           αίθουσα. Η αίθουσα είναι χωρητικότητας 60 ατόμων. Διαθέτει
           videoprojector και ηλεκτρονικό υπολογιστή. Ακόμη υπάρχει ρομποτική
@@ -105,7 +112,7 @@ function CustomParts({ part }) {
         </div>
 
         <div className="pt-2">
-          <span className="font-bold text-blue-700">2η Ενότητα: </span>
+          <span className="block font-bold text-blue-700">2η Ενότητα: </span>
           <div>
             Χωρίζονται σε ομάδες των 2-3 ατόμων. Κάθε ομάδα παρακολουθεί τις
             σχετικές οδηγίες που υπάρχουν σε κάθε υπολογιστή και ξεκινάει να τις
@@ -120,7 +127,7 @@ function CustomParts({ part }) {
         </div>
 
         <div className="pt-2">
-          <span className="font-bold text-blue-700">3η Ενότητα: </span>
+          <span className="block font-bold text-blue-700">3η Ενότητα: </span>
           <div>
             Ο αγώνας ξεκινά! Ο διαιτητής κρατάει το σκορ. Θα δοθούν δύο
             ευκαιρίες για τροποποιήσεις. Ο καλύτερος ας νικήσει!
@@ -153,10 +160,16 @@ function CustomParts({ part }) {
         Όπως και τα μαθήματα, έτσι και αυτή η μεμονωμένη δραστηριότητα είναι
         βασισμένη πάνω σε μία θεματολογία. Στην προτεινόμενη δραστηριότητα η
         θεματική ενότητα είναι ο μύθος του Θησέα με το Μινώταυρο.
+        <div className="p-8 flex items-center justify-center">
+          <ImageCard
+            image={require("../../../assets/img/labyrinth.jpg")}
+            description="Λαβύρινθος"
+          />
+        </div>
       </div>
 
       <div className="pt-2">
-        <span className="font-bold text-blue-700">1η Ενότητα: </span>
+        <span className="block font-bold text-blue-700">1η Ενότητα: </span>
         Κατά την προέλευση τους τα παιδιά συγκεντρώνονται στην αμφιθεατρική
         αίθουσα. Η αίθουσα είναι χωρητικότητας 60 ατόμων. Διαθέτει video
         projector και ηλεκτρονικό υπολογιστή. Ακόμη υπάρχει ρομποτική πίστα
@@ -192,7 +205,7 @@ function CustomParts({ part }) {
       </div>
 
       <div className="pt-2">
-        <span className="font-bold text-blue-700">2η Ενότητα: </span>
+        <span className="block font-bold text-blue-700">2η Ενότητα: </span>
         <div>
           Χωρίζονται σε ομάδες των 2-3 ατόμων. Κάθε ομάδα παρακολουθεί τις
           σχετικές οδηγίες που υπάρχουν σε κάθε υπολογιστή και ξεκινάει να τις
@@ -207,7 +220,7 @@ function CustomParts({ part }) {
       </div>
 
       <div className="pt-2">
-        <span className="font-bold text-blue-700">3η Ενότητα: </span>
+        <span className="block font-bold text-blue-700">3η Ενότητα: </span>
         <div>Ο αγώνας ξεκινά! Ο καλύτερος ας νικήσει!</div>
       </div>
     </>

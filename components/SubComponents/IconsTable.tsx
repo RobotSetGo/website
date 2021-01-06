@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ClassesTable({ info }) {
+export default function IconsTable({ info }) {
   return (
     <section className="relative pb-40">
       <div className="container mx-auto px-6">

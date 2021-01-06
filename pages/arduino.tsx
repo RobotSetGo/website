@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import ClassesTable from "../components/SubComponents/ClassesTable";
+import IconsTable from "../components/SubComponents/IconsTable";
 import { info3D as info } from "../data/class_info";
 
 export default function Arduino() {
@@ -11,6 +11,7 @@ export default function Arduino() {
         title="Αυτοματισμοί"
         subtitle="Γενική φιλοσοφία των μαθημάτων είναι η πρακτική εξάσκηση (Hands on Training). Κάθε αντικείμενο διδάσκεται μέσω ασκήσεων και παραδειγμάτων χρήσιμων για την κατανόηση και σωστή χρήση του Αrduino &  του Raspberry Pi."
         bgImage={require("../assets/img/arduino.jpg")}
+        minHeight="60vh"
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-4">
@@ -58,7 +59,7 @@ export default function Arduino() {
         </div>
       </section>
 
-      <ClassesTable info={info} />
+      <IconsTable info={info} />
     </Layout>
   );
 }

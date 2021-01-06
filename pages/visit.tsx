@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import ClassesTable from "../components/SubComponents/ClassesTable";
+import IconsTable from "../components/SubComponents/IconsTable";
 import { visit_dim, visit_gym, visit_nip, visit_lyc } from "../data/visit_info";
 import VisitBody from "../components/SubComponents/VisitBody";
 
@@ -13,52 +13,11 @@ export default function Visit() {
       "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
     image: require("../assets/img/beebot.jpg"),
     body: <VisitBody level="nip" />,
-    info: <ClassesTable info={visit_nip} />,
+    info: <IconsTable info={visit_nip} />,
   });
+
   useEffect(() => {
-    if (tab === "nip") {
-      setData({
-        title: "Νηπιαγωγείο",
-        subtitle:
-          "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
-        image: require("../assets/img/beebot.jpg"),
-        body: <VisitBody level="nip" />,
-        info: <ClassesTable info={visit_nip} />,
-      });
-    }
-
-    if (tab === "dim") {
-      setData({
-        title: "Δημοτικό",
-        subtitle:
-          "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO WeDo2 αφορά παιδιά ηλικίας από πρώτη δημοτικού μέχρι και τρίτη δημοτικού και ήρθε να αναβαθμίσει τον τρόπο που διδάσκονταν η ρομποτική στα παιδιά.",
-        image: require("../assets/img/wedo.jpg"),
-        body: <VisitBody level="dim" />,
-        info: <ClassesTable info={visit_dim} />,
-      });
-    }
-
-    if (tab === "gym") {
-      setData({
-        title: "Γυμνάσιο",
-        subtitle:
-          "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO Mindstorms EV3 αφορά παιδιά ηλικίας από τετάρτη δημοτικού μέχρι ενήλικες και αποτελεί μια ολοκληρωμένη λύση εκπαίδευσης STEM βασισμένη στην τεχνολογία της ρομποτικής.",
-        image: require("../assets/img/ev3.jpg"),
-        body: <VisitBody level="gym" />,
-        info: <ClassesTable info={visit_gym} />,
-      });
-    }
-
-    if (tab === "lyc") {
-      setData({
-        title: "Λύκειο",
-        subtitle:
-          "Το εκπαιδευτικό πακέτο LEGO® Education SPIKE ™ είναι το εργαλείο εκμάθησης STEAM για μαθητές ηλικίας 8 έως 11.",
-        image: require("../assets/img/spike.jpg"),
-        body: <VisitBody level="lyc" />,
-        info: <ClassesTable info={visit_lyc} />,
-      });
-    }
+    setDatafromTabs(setData, tab);
   }, [tab]);
 
   function activeTab(current) {
@@ -67,9 +26,15 @@ export default function Visit() {
     }
     return "border-transparent";
   }
+
   return (
-    <Layout title="Robot Set Go">
-      <Hero title={data.title} subtitle={data.subtitle} bgImage={data.image} />
+    <Layout title="Εκπαιδευτική Επίσκεψη - Robot Set Go">
+      <Hero
+        title={data.title}
+        subtitle={data.subtitle}
+        bgImage={require("../assets/img/visit.jpg")}
+        minHeight="60vh"
+      />
       <section className="pb-32 bg-white">
         <div className="container mx-auto px-4">
           <nav className="bg-white px-8 pt-2 shadow-md">
@@ -114,4 +79,50 @@ export default function Visit() {
       {data.info}
     </Layout>
   );
+}
+
+function setDatafromTabs(setData, tab) {
+  if (tab === "nip") {
+    setData({
+      title: "Νηπιαγωγείο",
+      subtitle:
+        "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
+      image: require("../assets/img/beebot.jpg"),
+      body: <VisitBody level="nip" />,
+      info: <IconsTable info={visit_nip} />,
+    });
+  }
+
+  if (tab === "dim") {
+    setData({
+      title: "Δημοτικό",
+      subtitle:
+        "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO WeDo2 αφορά παιδιά ηλικίας από πρώτη δημοτικού μέχρι και τρίτη δημοτικού και ήρθε να αναβαθμίσει τον τρόπο που διδάσκονταν η ρομποτική στα παιδιά.",
+      image: require("../assets/img/wedo.jpg"),
+      body: <VisitBody level="dim" />,
+      info: <IconsTable info={visit_dim} />,
+    });
+  }
+
+  if (tab === "gym") {
+    setData({
+      title: "Γυμνάσιο",
+      subtitle:
+        "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO Mindstorms EV3 αφορά παιδιά ηλικίας από τετάρτη δημοτικού μέχρι ενήλικες και αποτελεί μια ολοκληρωμένη λύση εκπαίδευσης STEM βασισμένη στην τεχνολογία της ρομποτικής.",
+      image: require("../assets/img/ev3.jpg"),
+      body: <VisitBody level="gym" />,
+      info: <IconsTable info={visit_gym} />,
+    });
+  }
+
+  if (tab === "lyc") {
+    setData({
+      title: "Λύκειο",
+      subtitle:
+        "Το εκπαιδευτικό πακέτο LEGO® Education SPIKE ™ είναι το εργαλείο εκμάθησης STEAM για μαθητές ηλικίας 8 έως 11.",
+      image: require("../assets/img/spike.jpg"),
+      body: <VisitBody level="lyc" />,
+      info: <IconsTable info={visit_lyc} />,
+    });
+  }
 }

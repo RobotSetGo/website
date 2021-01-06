@@ -17,8 +17,8 @@ export const classes = [
         title: "Προγραμματισμός",
         link: "/code",
         description: [
-            "HTML + CSS + JAVASCRIPT",
-            "Ιστοσελίδες για Προχωρημένους (Laravel, React, Vue, Databases κ.α)",
+            "HTML, Css, Javascript",
+            "Laravel, React, Vue, Databases",
             "Python + EV3 + NAO",
             "Mobile Development",
 
