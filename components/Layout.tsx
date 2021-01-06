@@ -20,11 +20,6 @@ const Layout = (props: PropsWithChildren<Props>) => {
           type="image/png"
           href={require("../assets/img/favicon.png")}
         />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="/static/css/fortawesome.css"
-        />
       </Head>
       <header>
         <Navbar transparent={true} />

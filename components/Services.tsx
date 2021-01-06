@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faUniversity } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services({ services }) {
   return (
@@ -9,7 +12,10 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                  <i className={services.small.left.icon}></i>
+                  <FontAwesomeIcon
+                    icon={faUniversity}
+                    style={{ width: "40px" }}
+                  />
                 </div>
                 <a href="/visit" className="block text-xl font-semibold">
                   {services.small.left.title}
