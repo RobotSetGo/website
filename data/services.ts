@@ -1,7 +1,7 @@
 export const services = {
     small: {
         left: {
-            icon: "fa fa-university",
+            icon: "fas fa-university",
             title: "Εκπαιδευτική Επίσκεψη",
             body:
                 "Γενική φιλοσοφία των μαθημάτων είναι η πρακτική εξάσκηση (Hands on Training). Κάθε αντικείμενο διδάσκεται μέσω ασκήσεων και παραδειγμάτων χρήσιμων για την κατανόηση και σωστή χρήση του Αrduino &  του Raspberry Pi.",
