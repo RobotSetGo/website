@@ -45,7 +45,7 @@ export const classes = [
         icon: faCube,
         title: "3D Σχεδίαση",
         link: "/3d",
-        description: ["Σχεδίαση και εκμάθηση 3D Printer"]
+        description: ["Σχεδίαση και εκμάθηση 3D Printer", "Animation (2D & 3D)"]
     },
     {
         icon: faLaptop,
