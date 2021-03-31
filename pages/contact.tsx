@@ -59,7 +59,7 @@ export default function Contact() {
                         className="ml-4"
                         target="_blank"
                       >
-                        info@robotsetgo.gr
+                        robotsetgo@gmail.com
                       </a>
                     </li>
 

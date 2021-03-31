@@ -10,6 +10,7 @@ import {
   faMapMarker,
   faPhone,
   faBuilding,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Footer(): ReactElement {
@@ -76,7 +77,7 @@ function Footer(): ReactElement {
                   <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
+                      href="/robotics"
                     >
                       Ρομποτική
                     </a>
@@ -235,6 +236,15 @@ function Footer(): ReactElement {
                     style={{ width: "15px", marginRight: "10px" }}
                   />
                   2392400370
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="mailto:robotsetgo@gmail.com" className="flex">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ width: "15px", marginRight: "10px" }}
+                  />
+                  robotsetgo@gmail.com
                 </a>
               </li>
             </ul>
