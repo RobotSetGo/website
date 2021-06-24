@@ -6,26 +6,39 @@ import {
   faChalkboardTeacher,
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
-import { mainCTX, mainVideo } from "../data/settings";
+import { mainSettings, summerActivity, mainVideo } from "../data/settings";
 import HorizontalLine from "./SubComponents/HorizontalLine";
+import VideoPlayer from "./SubComponents/VideoPlayer";
 
 export default function Services({ services }) {
-  const CTXDescription = () => {
-    return mainCTX.description !== "" ? (
-      <div className="text-md font-semibold mt-4">{mainCTX.description}</div>
+  const SummerActivity = () => {
+    return summerActivity.description !== "" ? (
+      <>
+        <div className="text-md font-semibold mt-4">
+          {summerActivity.description}
+        </div>
+        <div className="flex justify-center">
+          {summerActivity.image !== "" ? (
+            <img src={require("../assets/img/summer_activity.jpg")} />
+          ) : (
+            <></>
+          )}
+        </div>
+        <SummerActivityLink />
+      </>
     ) : (
       <></>
     );
   };
 
-  const CTXLink = () => {
-    return mainCTX.link ? (
+  const SummerActivityLink = () => {
+    return summerActivity.link ? (
       <div className="text-md font-semibold mt-4">
         <a
-          href={mainCTX.link.url}
+          href={summerActivity.link.url}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
         >
-          {mainCTX.link.title}
+          {summerActivity.link.title}
         </a>
       </div>
     ) : (
@@ -94,33 +107,30 @@ export default function Services({ services }) {
           </div>
         </div>
         <div className="flex flex-wrap items-center mt-32 text-center">
-          <div className="w-full">
-            <div className="text-2xl font-bold">Ωράριο Λειτουργίας</div>
-            <div className="text-md font-semibold">
-              Καθημερινές 9:00 – 13:00 και 17:00 – 20:00 και Σάββατο 9:00 –
-              13:00
+          {mainSettings.showHours ? (
+            <div className="w-full">
+              <div className="text-2xl font-bold">Ωράριο Λειτουργίας</div>
+              <div className="text-md font-semibold">
+                Καθημερινές 9:00 – 13:00 και 17:00 – 20:00 και Σάββατο 9:00 –
+                13:00
+              </div>
+              <HorizontalLine />
             </div>
-            <HorizontalLine />
-          </div>
-
-          <div className="w-full flex flex-col flex-wrap content-center justify-center">
-            <iframe
-              className="mb-6"
-              width="560"
-              height="315"
-              src={mainVideo.link}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen={true}
-            ></iframe>
-            <HorizontalLine />
-          </div>
+          ) : (
+            <></>
+          )}
+          {mainSettings.showVideo ? (
+            <div className="w-full flex flex-col flex-wrap content-center justify-center">
+              <VideoPlayer link={mainVideo.link} />
+              <HorizontalLine />
+            </div>
+          ) : (
+            <></>
+          )}
 
           <div className="w-full">
-            <div className="text-2xl font-bold">{mainCTX.title}</div>
-            <CTXDescription />
-            <CTXLink />
+            <div className="text-2xl font-bold">{summerActivity.title}</div>
+            <SummerActivity />
           </div>
         </div>
 

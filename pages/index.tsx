@@ -27,4 +27,15 @@ function IndexPage() {
   );
 }
 
+// export async function getStaticProps() {
+//   const gSettings = await getSettings();
+
+//   return {
+//     props: {
+//       gSettings: gSettings.slice(1, gSettings.length),
+//     },
+//     revalidate: 1,
+//   };
+// }
+
 export default IndexPage;

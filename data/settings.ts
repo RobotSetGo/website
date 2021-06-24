@@ -1,3 +1,8 @@
+export const mainSettings = {
+  showSummer: true,
+  showHours: false,
+  showVideo: false,
+};
 export const heroSettings = {
   title: "Εκπαιδευτική Ρομποτική",
   subtitle:
@@ -26,7 +31,8 @@ export const workTime = {
 
 export const summerActivity = {
   title: "Θερινή Απασχόληση",
-  description: "",
+  description: "Ατελέιωτο Παιχνίδι με Ρομποτική",
+  image: "../assets/img/summer_activity.jpg",
   link: {
     title: "Μάθετε περισσότερα",
     url: "/summer_activity",
@@ -36,5 +42,3 @@ export const summerActivity = {
 export const mainVideo = {
   link: "https://www.youtube.com/embed/AEuTHExrVtU",
 };
-
-export const mainCTX = summerActivity;
