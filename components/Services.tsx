@@ -6,8 +6,32 @@ import {
   faChalkboardTeacher,
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
+import { mainCTX, mainVideo } from "../data/settings";
+import HorizontalLine from "./SubComponents/HorizontalLine";
 
 export default function Services({ services }) {
+  const CTXDescription = () => {
+    return mainCTX.description !== "" ? (
+      <div className="text-md font-semibold mt-4">{mainCTX.description}</div>
+    ) : (
+      <></>
+    );
+  };
+
+  const CTXLink = () => {
+    return mainCTX.link ? (
+      <div className="text-md font-semibold mt-4">
+        <a
+          href={mainCTX.link.url}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        >
+          {mainCTX.link.title}
+        </a>
+      </div>
+    ) : (
+      <></>
+    );
+  };
   return (
     <section id="services" className="pb-20 bg-gray-300 -mt-24">
       <div className="container mx-auto px-4">
@@ -67,6 +91,36 @@ export default function Services({ services }) {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap items-center mt-32 text-center">
+          <div className="w-full">
+            <div className="text-2xl font-bold">Ωράριο Λειτουργίας</div>
+            <div className="text-md font-semibold">
+              Καθημερινές 9:00 – 13:00 και 17:00 – 20:00 και Σάββατο 9:00 –
+              13:00
+            </div>
+            <HorizontalLine />
+          </div>
+
+          <div className="w-full flex flex-col flex-wrap content-center justify-center">
+            <iframe
+              className="mb-6"
+              width="560"
+              height="315"
+              src={mainVideo.link}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen={true}
+            ></iframe>
+            <HorizontalLine />
+          </div>
+
+          <div className="w-full">
+            <div className="text-2xl font-bold">{mainCTX.title}</div>
+            <CTXDescription />
+            <CTXLink />
           </div>
         </div>
 

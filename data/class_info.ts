@@ -23,6 +23,10 @@ export const infoDistance = [
     title: "300 μαζί με τον εξοπλισμό",
     icon: faEuroSign,
   },
+  {
+    title: "Πιστοποίηση Παρακολούθησης",
+    icon: faCertificate,
+  },
 ];
 
 export const info3D = [
@@ -65,6 +69,10 @@ export const code = [
     title: "40 / μήνα",
     icon: faEuroSign,
   },
+  {
+    title: "Πιστοποίηση Παρακολούθησης",
+    icon: faCertificate,
+  },
 ];
 
 export const arduino = [
@@ -84,6 +92,10 @@ export const arduino = [
     title: "40 / μήνα",
     icon: faEuroSign,
   },
+  {
+    title: "Πιστοποίηση Παρακολούθησης",
+    icon: faCertificate,
+  },
 ];
 
 export const robotics = [
@@ -102,5 +114,9 @@ export const robotics = [
   {
     title: "40 / μήνα",
     icon: faEuroSign,
+  },
+  {
+    title: "Πιστοποίηση Παρακολούθησης",
+    icon: faCertificate,
   },
 ];
