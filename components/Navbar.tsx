@@ -1,4 +1,5 @@
 import React, { ReactElement, useState } from "react";
+import { top_navbar } from "../data/navbar";
 
 interface Props {
   transparent?: boolean;
@@ -50,58 +51,21 @@ function Navbar(props: Props): ReactElement {
           id="example-navbar-warning"
         >
           <ul className="flex flex-col lg:flex-row list-none mr-auto">
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="/#classes"
-              >
-                ΤΜΗΜΑΤΑ
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="/visit"
-              >
-                ΕΚ. ΕΚΔΡΟΜΗ
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="/seminars"
-              >
-                ΕΠΙΜΟΡΦΩΣΗ
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="/company"
-              >
-                ΕΤΑΙΡΙΑ
-              </a>
-            </li>
+            {top_navbar.map((nav, key) => (
+              <li key={key} className="flex items-center">
+                <a
+                  className={
+                    (props.transparent
+                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      : "text-gray-800 hover:text-gray-600") +
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  }
+                  href={nav.link}
+                >
+                  {nav.title}
+                </a>
+              </li>
+            ))}
           </ul>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="flex items-center">

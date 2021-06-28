@@ -11,6 +11,7 @@ export default function SummerActivity() {
         subtitle="Ατελείωτο παιχνίδι με ρομποτική!"
         bgImage={require("../assets/img/summer-bg.jpg")}
         minHeight="60vh"
+        customImage={require("../assets/img/summer_bg.jpg")}
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-6">

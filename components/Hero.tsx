@@ -33,7 +33,7 @@ export default function Hero({
               <h1 className="text-white font-semibold text-5xl">{title}</h1>
               <p className="mt-4 text-lg text-gray-300">{subtitle}</p>
               {customImage ? (
-                <img className="block mx-auto h-24 mt-6" src={customImage} />
+                <img className="block mx-auto mt-6" src={customImage} />
               ) : null}
             </div>
           </div>

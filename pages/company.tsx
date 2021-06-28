@@ -107,10 +107,7 @@ export default function company() {
                 Συνεργασίες
               </a>
 
-              <a
-                href="/company_images"
-                className="block font-bold text-gray-800 mt-8"
-              >
+              <a href="/espa" className="block font-bold text-gray-800 mt-8">
                 ΕΣΠΑ
               </a>
             </div>

@@ -9,8 +9,8 @@ export default function Espa() {
         title="ΕΣΠΑ"
         subtitle="Ερευνώ-Καινοτομώ-Δημιουργώ"
         bgImage={require("../assets/img/espa.jpg")}
-        minHeight="60vh"
-        customImage={require("../assets/img/espa/etak.jpg")}
+        minHeight="40vh"
+        customImage={require("../assets/img/espa_banner.jpg")}
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-6">
