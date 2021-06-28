@@ -8,7 +8,6 @@ interface AccordionProps {
 export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState("0px");
-  const [rotate, setRotate] = useState("transform duration-700 ease");
 
   const contentSpace = useRef(null);
 
@@ -16,11 +15,6 @@ export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
     setActive(active === false ? true : false);
     // @ts-ignore
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
-    setRotate(
-      active
-        ? "transform duration-700 ease"
-        : "transform duration-700 ease rotate-180"
-    );
   }
 
   return (
