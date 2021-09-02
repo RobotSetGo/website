@@ -13,7 +13,7 @@ export default function Seminars() {
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center mt-32">
+          <div className="flex flex-wrap items-center mt-8">
             <div className="w-full md:w-10/12 px-6 mr-auto ml-auto">
               <div className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
                 <div className="pb-4">

@@ -39,6 +39,17 @@ export const summerActivity = {
   },
 };
 
+export const studentRegister = {
+  title: "Εκδήλωση Ενδιαφέροντος",
+  subtitle: "Για μαθήματα δια ζώσης και διαδικτυακά",
+  description:
+    "Πατήστε στον παρακάτω σύνδεσμο για να συμπληρώσετε την φόρμα εκδήλωσης ενδιαφέροντος για τα μαθήματα που προσφέρει η σχολή μας!",
+  link: {
+    title: "Συμπλήρωση Φόρμας",
+    url: "https://forms.gle/zUbRdsoSixw4xJGQ7",
+  },
+};
+
 export const mainVideo = {
   link: "https://www.youtube.com/embed/AEuTHExrVtU",
 };

@@ -6,45 +6,12 @@ import {
   faChalkboardTeacher,
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
-import { mainSettings, summerActivity, mainVideo } from "../data/settings";
+import { mainSettings, mainVideo } from "../data/settings";
 import HorizontalLine from "./SubComponents/HorizontalLine";
 import VideoPlayer from "./SubComponents/VideoPlayer";
+import SeasonalSection from "./SubComponents/SeasonalSection";
 
 export default function Services({ services }) {
-  const SummerActivity = () => {
-    return summerActivity.description !== "" ? (
-      <>
-        <div className="text-md font-semibold mt-4">
-          {summerActivity.description}
-        </div>
-        <div className="flex justify-center">
-          {summerActivity.image !== "" ? (
-            <img src={require("../assets/img/summer_activity.jpg")} />
-          ) : (
-            <></>
-          )}
-        </div>
-        <SummerActivityLink />
-      </>
-    ) : (
-      <></>
-    );
-  };
-
-  const SummerActivityLink = () => {
-    return summerActivity.link ? (
-      <div className="text-md font-semibold mt-4">
-        <a
-          href={summerActivity.link.url}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-        >
-          {summerActivity.link.title}
-        </a>
-      </div>
-    ) : (
-      <></>
-    );
-  };
   return (
     <section id="services" className="pb-20 bg-gray-300 -mt-24">
       <div className="container mx-auto px-4">
@@ -129,8 +96,7 @@ export default function Services({ services }) {
           )}
 
           <div className="w-full">
-            <div className="text-2xl font-bold">{summerActivity.title}</div>
-            <SummerActivity />
+            <SeasonalSection season="register" />
           </div>
         </div>
 

@@ -15,6 +15,7 @@ export const top_navbar = [
     link: "/company",
     title: "ΕΤΑΙΡΙΑ",
   },
+
   {
     link: "/responsibility",
     title: "ΚΟΙΝΩΝΙΚΗ ΥΠΕΥΘΥΝΟΤΗΤΑ",

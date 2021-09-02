@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import { Accordion } from "components/Accordion";
 import { items } from "data/responsibility";
 
-export default function Espa() {
+export default function Responsibility() {
   return (
     <Layout title="Κοινωνική Υπευθυνότητα">
       <Hero
