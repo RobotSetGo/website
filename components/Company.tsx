@@ -21,7 +21,7 @@ export default function Featured() {
             <img
               alt="..."
               className="max-w-full rounded-lg shadow-lg"
-              src={require("../assets/img/company/0.jpg")}
+              src={require("../assets/img/out.jpeg")}
             />
           </div>
           <div className="w-full md:w-5/12 ml-auto mr-auto px-4">

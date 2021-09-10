@@ -16,7 +16,7 @@ export const infoDistance = [
     icon: faHistory,
   },
   {
-    title: "90 λεπά / εβδομάδα",
+    title: "60 λεπά / εβδομάδα",
     icon: faClock,
   },
   {
@@ -39,7 +39,7 @@ export const info3D = [
     icon: faHistory,
   },
   {
-    title: "90 λεπά / εβδομάδα",
+    title: "60 λεπά / εβδομάδα",
     icon: faClock,
   },
   {
@@ -62,7 +62,7 @@ export const code = [
     icon: faHistory,
   },
   {
-    title: "90 λεπά / εβδομάδα",
+    title: "60 λεπά / εβδομάδα",
     icon: faClock,
   },
   {
@@ -85,7 +85,7 @@ export const arduino = [
     icon: faHistory,
   },
   {
-    title: "90 λεπά / εβδομάδα",
+    title: "60 λεπά / εβδομάδα",
     icon: faClock,
   },
   {
@@ -108,7 +108,30 @@ export const robotics = [
     icon: faHistory,
   },
   {
-    title: "90 λεπά / εβδομάδα",
+    title: "60 λεπά / εβδομάδα",
+    icon: faClock,
+  },
+  {
+    title: "40 / μήνα",
+    icon: faEuroSign,
+  },
+  {
+    title: "Πιστοποίηση Παρακολούθησης",
+    icon: faCertificate,
+  },
+];
+
+export const minecraft = [
+  {
+    title: "8 / τμήμα",
+    icon: faUser,
+  },
+  {
+    title: "30 εβδομάδες / έτος",
+    icon: faHistory,
+  },
+  {
+    title: "60 λεπά / εβδομάδα",
     icon: faClock,
   },
   {

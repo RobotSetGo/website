@@ -5,6 +5,8 @@ import {
   faBirthdayCake,
   faChalkboardTeacher,
   faUserFriends,
+  faLaptop,
+  faList
 } from "@fortawesome/free-solid-svg-icons";
 import { mainSettings, mainVideo } from "../data/settings";
 import HorizontalLine from "./SubComponents/HorizontalLine";
@@ -21,11 +23,11 @@ export default function Services({ services }) {
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                   <FontAwesomeIcon
-                    icon={faUniversity}
+                    icon={faLaptop}
                     style={{ width: "40px" }}
                   />
                 </div>
-                <a href="/visit" className="block text-xl font-semibold">
+                <a href="/distance" className="block text-xl font-semibold">
                   {services.small.left.title}
                 </a>
                 <p className="mt-2 mb-4 text-gray-600">
@@ -44,7 +46,7 @@ export default function Services({ services }) {
                     style={{ width: "40px" }}
                   />
                 </div>
-                <a href="/seminars" className="block text-xl font-semibold">
+                <a href="#classes" className="block text-xl font-semibold">
                   {services.small.middle.title}
                 </a>
                 <p className="mt-2 mb-4 text-gray-600">
@@ -59,11 +61,11 @@ export default function Services({ services }) {
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                   <FontAwesomeIcon
-                    icon={faBirthdayCake}
+                    icon={faList}
                     style={{ width: "40px" }}
                   />
                 </div>
-                <a href="/events" className="block text-xl font-semibold">
+                <a href="https://forms.gle/zUbRdsoSixw4xJGQ7" className="block text-xl font-semibold" target="_blank">
                   {services.small.right.title}
                 </a>
                 <p className="mt-2 mb-4 text-gray-600">
