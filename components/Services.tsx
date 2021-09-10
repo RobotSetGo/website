@@ -1,8 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUniversity,
-  faBirthdayCake,
   faChalkboardTeacher,
   faUserFriends,
   faLaptop,
