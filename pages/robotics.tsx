@@ -40,7 +40,7 @@ export default function Robotics() {
         title: "EV3",
         subtitle:
           "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO Mindstorms EV3 αφορά παιδιά ηλικίας από τετάρτη δημοτικού μέχρι ενήλικες και αποτελεί μια ολοκληρωμένη λύση εκπαίδευσης STEM βασισμένη στην τεχνολογία της ρομποτικής.",
-        image: require("/img/ev3.jpg"),
+        image: "/img/ev3.jpg",
         body: <RoboticsBody type="ev3" />,
       });
     }
@@ -50,7 +50,7 @@ export default function Robotics() {
         title: "Spike",
         subtitle:
           "Το εκπαιδευτικό πακέτο LEGO® Education SPIKE ™ είναι το εργαλείο εκμάθησης STEAM για μαθητές ηλικίας 8 έως 11.",
-        image: require("/img/spike.jpg"),
+        image: "/img/spike.jpg",
         body: <RoboticsBody type="spike" />,
       });
     }
