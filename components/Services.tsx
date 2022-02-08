@@ -96,7 +96,7 @@ export default function Services({ services }) {
           )}
 
           <div className="w-full">
-            <SeasonalSection season="register" />
+            <SeasonalSection season="mid" />
           </div>
         </div>
 
@@ -123,7 +123,7 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-blue-600">
               <img
                 alt="..."
-                src={require("../assets/img/robotics_ev3.jpg")}
+                src="/img/robotics_ev3.jpg"
                 className="w-full align-middle rounded-t-lg"
               />
               <blockquote className="relative p-8 mb-4">

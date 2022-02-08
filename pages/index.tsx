@@ -13,7 +13,7 @@ function IndexPage() {
       <Hero
         title={heroSettings.title}
         subtitle={heroSettings.subtitle}
-        bgImage={require("../assets/img/main.jpg")}
+        bgImage="/img/main.jpg"
       />
       <Services services={services} />
       <Company />

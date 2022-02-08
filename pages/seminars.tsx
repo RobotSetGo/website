@@ -8,7 +8,7 @@ export default function Seminars() {
       <Hero
         title="Επιμόρφωση"
         subtitle="Η Robot set go οργανώνει  Επιμόρφωση για την Αξιοποίηση και Εφαρμογή της Ρομποτικής Τεχνολογίας στη Διδακτική Πράξη. Έτσι η Εκπαιδευτική Ρομποτική μπαίνει στην ζωή μας δίνοντας τους σύγχρονους τρόπους διδασκαλίας και την δομή των μαθημάτων."
-        bgImage={require("../assets/img/seminar.jpg")}
+        bgImage="/img/seminar.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

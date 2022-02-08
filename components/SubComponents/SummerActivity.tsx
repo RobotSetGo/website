@@ -25,7 +25,7 @@ export default function SummerActivity() {
             </div>
             <div className="flex justify-center">
                 {summerActivity.image !== "" ? (
-                    <img src={require("../../assets/img/summer_activity.jpg")} />
+                    <img src="/img/summer_activity.jpg" alt="summer_activity" />
                 ) : (
                     <></>
                 )}

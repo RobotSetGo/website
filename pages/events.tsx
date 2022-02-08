@@ -5,11 +5,11 @@ import ImageCard from "../components/ImageCard";
 
 const images = [
   {
-    path: require("../assets/img/party/2.jpg"),
+    path: "/img/party/2.jpg",
     description: "Παιδικό πάρτυ στην σχολή μας!",
   },
   {
-    path: require("../assets/img/party/1.jpg"),
+    path: "/img/party/1.jpg",
     description: "Παιδικό πάρτυ στην σχολή μας!",
   },
 ];
@@ -20,7 +20,7 @@ export default function Events() {
       <Hero
         title="Εκδηλώσεις"
         subtitle="Ένα πάρτυ γενεθλίων που θα σας μείνει αξέχαστο!"
-        bgImage={require("../assets/img/party.jpg")}
+        bgImage="/img/party.jpg"
         minHeight="60vh"
       />
       <section className="pb-2 bg-white">

@@ -10,7 +10,7 @@ export default function Animation() {
             <Hero
                 title="Animation"
                 subtitle="Ένα βιωματικό μάθημα για σύνθεση εικόνων"
-                bgImage={require("../assets/img/animation.jpg")}
+                bgImage="/img/animation.jpg"
                 minHeight="60vh"
             />
             <section className="pb-10 bg-white">

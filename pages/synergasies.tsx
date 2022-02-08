@@ -5,19 +5,19 @@ import ImageCard from "components/ImageCard";
 
 const images = [
   {
-    path: require("../assets/img/company/robots/robotics.png"),
+    path: "/img/company/robots/robotics.png",
     description: "Επαιδευτικη Ρομποτική",
   },
   {
-    path: require("../assets/img/company/robots/code.png"),
+    path: "/img/company/robots/code.png",
     description: "Μαθήματα Προγραμματισμού",
   },
   {
-    path: require("../assets/img/company/robots/arduino.png"),
+    path: "/img/company/robots/arduino.png",
     description: "Ρομποτική και Αυτοματισμός",
   },
   {
-    path: require("../assets/img/company/robots/3d.png"),
+    path: "/img/company/robots/3d.png",
     description: "Τρισδιάστατη (3D) Σχεδίαση",
   },
 ];
@@ -28,7 +28,7 @@ export default function School_Stats() {
       <Hero
         title="Συνεργασίες"
         subtitle=""
-        bgImage={require("../assets/img/school_stats.jpg")}
+        bgImage="/img/school_stats.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">
@@ -41,7 +41,7 @@ export default function School_Stats() {
                   να γνωριστούμε από κοντά
                 </h1>
                 <img
-                  src={require("../assets/img/company/2.jpg")}
+                  src="/img/company/2.jpg"
                   alt="school-2"
                 />
                 <a

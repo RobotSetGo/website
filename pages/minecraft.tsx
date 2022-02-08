@@ -10,7 +10,7 @@ export default function Minecraft() {
             <Hero
                 title="Minecraft Education"
                 subtitle="Μέσα από ένα περιβάλλον παιχνιδιού οι μαθητές μελετούν μαθήματα, όπως Μαθηματικά, Ιστορία, Φυσική, Προγραμματισμό, κ.α. Σε αυτό το οικείο περιβάλλον οι μαθητές μελετούν, μαθαίνουν και δημιουργούν κώδικα με ευχάριστο και δημιουργικό τρόπο."
-                bgImage={require("../assets/img/minecraft.jpg")}
+                bgImage="/img/minecraft.jpg"
                 minHeight="60vh"
             />
             <section className="pb-10 bg-white">

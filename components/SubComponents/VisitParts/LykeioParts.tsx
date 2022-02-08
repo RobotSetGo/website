@@ -17,7 +17,7 @@ export default function LykeioParts() {
         αναπαραστάσεις.
         <div className="p-8 flex items-center justify-center">
           <ImageCard
-            image={require("../../../assets/img/theatriki.jpg")}
+            image="/img/theatriki.jpg"
             description="Κινούμενες θεατρικές παραστάσεις"
           />
         </div>

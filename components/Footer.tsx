@@ -25,7 +25,7 @@ function Footer(): ReactElement {
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold">
               <img
-                src={require("../assets/img/logo1.png")}
+                src="/img/logo1.png"
                 style={{ height: "200px" }}
               />
             </h4>

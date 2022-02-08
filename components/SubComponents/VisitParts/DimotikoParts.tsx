@@ -67,7 +67,7 @@ function CustomParts({ part }) {
           θεματική ενότητα είναι οι Ολυμπιακοί Αγώνες στην αρχαιότητα.
           <div className="p-8 flex items-center justify-center">
             <ImageCard
-              image={require("../../../assets/img/pali.jpg")}
+              image="/img/pali.jpg"
               description="Αγώνας πάλης στην αρχαιότητα"
             />
           </div>
@@ -162,7 +162,7 @@ function CustomParts({ part }) {
         θεματική ενότητα είναι ο μύθος του Θησέα με το Μινώταυρο.
         <div className="p-8 flex items-center justify-center">
           <ImageCard
-            image={require("../../../assets/img/labyrinth.jpg")}
+            image="/img/labyrinth.jpg"
             description="Λαβύρινθος"
           />
         </div>

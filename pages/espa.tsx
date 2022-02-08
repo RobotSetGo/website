@@ -8,9 +8,9 @@ export default function Espa() {
       <Hero
         title="ΕΣΠΑ"
         subtitle="Ερευνώ-Καινοτομώ-Δημιουργώ"
-        bgImage={require("../assets/img/espa.jpg")}
+        bgImage="/img/espa.jpg"
         minHeight="40vh"
-        customImage={require("../assets/img/espa_banner.jpg")}
+        customImage="/img/espa_banner.jpg"
       />
       <section className="pb-10 bg-white">
         <div className="container mx-auto px-6">
@@ -20,12 +20,12 @@ export default function Espa() {
                 <div className="flex flex-col md:flex-row flex-wrap items-center justify-center">
                   <img
                     className="w-64 mr-12"
-                    src={require("../assets/img/espa/1.jpeg")}
+                    src="/img/espa/1.jpeg"
                     alt="espa1"
                   />
                   <img
                     className="w-64 mr-12"
-                    src={require("../assets/img/espa/2.jpeg")}
+                    src="/img/espa/2.jpeg"
                     alt="espa2"
                   />
                 </div>

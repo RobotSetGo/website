@@ -16,7 +16,7 @@ export default function Syllogoi_Message() {
       <Hero
         title="Προς Σύλλογο Γονέων και Κηδεμόνωνς"
         subtitle=""
-        bgImage={require("../assets/img/teachers_message.jpg")}
+        bgImage="/img/teachers_message.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

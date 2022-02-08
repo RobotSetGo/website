@@ -10,7 +10,7 @@ export default function Arduino() {
       <Hero
         title="Αυτοματισμοί"
         subtitle="Γενική φιλοσοφία των μαθημάτων είναι η πρακτική εξάσκηση (Hands on Training). Κάθε αντικείμενο διδάσκεται μέσω ασκήσεων και παραδειγμάτων χρήσιμων για την κατανόηση και σωστή χρήση του Αrduino &  του Raspberry Pi."
-        bgImage={require("../assets/img/arduino.jpg")}
+        bgImage="/img/arduino.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

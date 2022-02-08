@@ -9,7 +9,7 @@ export default function School_Stats() {
       <Hero
         title="Σχολεία που μας επισκέφτηκαν"
         subtitle=""
-        bgImage={require("../assets/img/school_stats.jpg")}
+        bgImage="/img/school_stats.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

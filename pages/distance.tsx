@@ -10,7 +10,7 @@ export default function Distance() {
       <Hero
         title="Εξ' αποστάσεως"
         subtitle="«Μένουμε ασφαλείς»"
-        bgImage={require("../assets/img/distance.jpg")}
+        bgImage="/img/distance.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

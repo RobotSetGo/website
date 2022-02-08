@@ -26,7 +26,7 @@ function Navbar(props: Props): ReactElement {
             href="/"
           >
             <img
-              src={require("../assets/img/logo-wide.png")}
+              src="/img/logo-wide.png"
               style={{ height: "30px" }}
             />
           </a>

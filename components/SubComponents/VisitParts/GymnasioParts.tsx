@@ -67,7 +67,7 @@ function CustomParts({ part }) {
           θεματική ενότητα είναι οι Ολυμπιακοί Αγώνες στην αρχαιότητα.
           <div className="p-8 flex items-center justify-center">
             <ImageCard
-              image={require("../../../assets/img/skytalodromia.jpg")}
+              image="/img/skytalodromia.jpg"
               description="Σκυταλοδρομία στην αρχαιότητα"
             />
           </div>
@@ -162,7 +162,7 @@ function CustomParts({ part }) {
         θεματική ενότητα είναι ο καταπέλτης, η περίφημη αρχαία πολεμική μηχανή.
         <div className="p-8 flex items-center justify-center">
           <ImageCard
-            image={require("../../../assets/img/katapeltis.jpg")}
+            image="/img/katapeltis.jpg"
             description="Καταπέλτης"
           />
         </div>

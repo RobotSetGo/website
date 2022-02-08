@@ -10,7 +10,7 @@ export default function Responsibility() {
       <Hero
         title="Κοινωνική Υπευθυνότητα"
         subtitle="Δράσεις, προτοβουλίες και προσφορές από την εταιρία"
-        bgImage={require("../assets/img/responsibility_bg.jpg")}
+        bgImage="/img/responsibility_bg.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">

@@ -10,7 +10,7 @@ export default function Robotics() {
     title: "Beebot",
     subtitle:
       "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
-    image: require("../assets/img/beebot.jpg"),
+    image: "/img/beebot.jpg",
     body: <RoboticsBody type="beebot" />,
   });
 
@@ -20,7 +20,7 @@ export default function Robotics() {
         title: "Beebot",
         subtitle:
           "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
-        image: require("../assets/img/beebot.jpg"),
+        image: "/img/beebot.jpg",
         body: <RoboticsBody type="beebot" />,
       });
     }
@@ -30,7 +30,7 @@ export default function Robotics() {
         title: "WeDo",
         subtitle:
           "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO WeDo2 αφορά παιδιά ηλικίας από πρώτη δημοτικού μέχρι και τρίτη δημοτικού και ήρθε να αναβαθμίσει τον τρόπο που διδάσκονταν η ρομποτική στα παιδιά.",
-        image: require("../assets/img/wedo.jpg"),
+        image: "/img/wedo.jpg",
         body: <RoboticsBody type="wedo" />,
       });
     }
@@ -40,7 +40,7 @@ export default function Robotics() {
         title: "EV3",
         subtitle:
           "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO Mindstorms EV3 αφορά παιδιά ηλικίας από τετάρτη δημοτικού μέχρι ενήλικες και αποτελεί μια ολοκληρωμένη λύση εκπαίδευσης STEM βασισμένη στην τεχνολογία της ρομποτικής.",
-        image: require("../assets/img/ev3.jpg"),
+        image: require("/img/ev3.jpg"),
         body: <RoboticsBody type="ev3" />,
       });
     }
@@ -50,7 +50,7 @@ export default function Robotics() {
         title: "Spike",
         subtitle:
           "Το εκπαιδευτικό πακέτο LEGO® Education SPIKE ™ είναι το εργαλείο εκμάθησης STEAM για μαθητές ηλικίας 8 έως 11.",
-        image: require("../assets/img/spike.jpg"),
+        image: require("/img/spike.jpg"),
         body: <RoboticsBody type="spike" />,
       });
     }

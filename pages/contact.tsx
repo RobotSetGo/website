@@ -8,7 +8,7 @@ export default function Contact() {
       <Hero
         title="Επικοινωνία"
         subtitle=""
-        bgImage={require("../assets/img/company/1.jpg")}
+        bgImage="/img/company/1.jpg"
         minHeight="40vh"
       />
       <section className="pb-40 bg-white">

@@ -4,12 +4,12 @@ export const Team = () => <section className="pt-20 pb-48">
             <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">
                     Here are our heroes
-          </h2>
+                </h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
                     According to the National Oceanic and Atmospheric
                     Administration, Ted, Scambos, NSIDClead scentist, puts the
                     potentially record maximum.
-          </p>
+                </p>
             </div>
         </div>
         <div className="flex flex-wrap">
@@ -17,17 +17,17 @@ export const Team = () => <section className="pt-20 pb-48">
                 <div className="px-6">
                     <img
                         alt="..."
-                        src={require('../assets/img/team-1-800x800.jpg')}
+                        src='../assets/img/team-1-800x800.jpg'
                         className="shadow-lg rounded-full max-w-full mx-auto"
                         style={{ maxWidth: "120px" }}
                     />
                     <div className="pt-6 text-center">
                         <h5 className="text-xl font-bold">
                             Ryan Tompson
-              </h5>
+                        </h5>
                         <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                             Web Developer
-              </p>
+                        </p>
                         <div className="mt-6">
                             <button
                                 className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -55,17 +55,17 @@ export const Team = () => <section className="pt-20 pb-48">
                 <div className="px-6">
                     <img
                         alt="..."
-                        src={require('../assets/img/team-2-800x800.jpg')}
+                        src='../assets/img/team-2-800x800.jpg'
                         className="shadow-lg rounded-full max-w-full mx-auto"
                         style={{ maxWidth: "120px" }}
                     />
                     <div className="pt-6 text-center">
                         <h5 className="text-xl font-bold">
                             Romina Hadid
-              </h5>
+                        </h5>
                         <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                             Marketing Specialist
-              </p>
+                        </p>
                         <div className="mt-6">
                             <button
                                 className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -87,17 +87,17 @@ export const Team = () => <section className="pt-20 pb-48">
                 <div className="px-6">
                     <img
                         alt="..."
-                        src={require('../assets/img/team-3-800x800.jpg')}
+                        src='../assets/img/team-3-800x800.jpg'
                         className="shadow-lg rounded-full max-w-full mx-auto"
                         style={{ maxWidth: "120px" }}
                     />
                     <div className="pt-6 text-center">
                         <h5 className="text-xl font-bold">
                             Alexa Smith
-              </h5>
+                        </h5>
                         <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                             UI/UX Designer
-              </p>
+                        </p>
                         <div className="mt-6">
                             <button
                                 className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
@@ -125,17 +125,17 @@ export const Team = () => <section className="pt-20 pb-48">
                 <div className="px-6">
                     <img
                         alt="..."
-                        src={require('../assets/img/team-4-470x470.png')}
+                        src='../assets/img/team-4-470x470.png'
                         className="shadow-lg rounded-full max-w-full mx-auto"
                         style={{ maxWidth: "120px" }}
                     />
                     <div className="pt-6 text-center">
                         <h5 className="text-xl font-bold">
                             Jenna Kardi
-              </h5>
+                        </h5>
                         <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                             Founder and CEO
-              </p>
+                        </p>
                         <div className="mt-6">
                             <button
                                 className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"

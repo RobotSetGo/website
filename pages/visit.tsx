@@ -11,7 +11,7 @@ export default function Visit() {
     title: "Νηπιαγωγείο",
     subtitle:
       "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
-    image: require("../assets/img/beebot.jpg"),
+    image: "img/beebot.jpg",
     body: <VisitBody level="nip" />,
     info: <IconsTable info={visit_nip} />,
   });
@@ -32,7 +32,7 @@ export default function Visit() {
       <Hero
         title={data.title}
         subtitle={data.subtitle}
-        bgImage={require("../assets/img/visit.jpg")}
+        bgImage={"img/visit.jpg"}
         minHeight="60vh"
       />
       <section className="pb-32 bg-white">
@@ -87,7 +87,7 @@ function setDatafromTabs(setData, tab) {
       title: "Νηπιαγωγείο",
       subtitle:
         "Μια ειδική κατηγορία εκπαιδευτικής ρομποτικής συνιστούν τα προγραμματιζόμενα παιχνίδια τύπου Logo τα οποία βρίσκουν ιδιαίτερη εφαρμογή στην προσχολική και στην πρώτη σχολική ηλικία.",
-      image: require("../assets/img/beebot.jpg"),
+      image: "img/beebot.jpg",
       body: <VisitBody level="nip" />,
       info: <IconsTable info={visit_nip} />,
     });
@@ -98,7 +98,7 @@ function setDatafromTabs(setData, tab) {
       title: "Δημοτικό",
       subtitle:
         "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO WeDo2 αφορά παιδιά ηλικίας από πρώτη δημοτικού μέχρι και τρίτη δημοτικού και ήρθε να αναβαθμίσει τον τρόπο που διδάσκονταν η ρομποτική στα παιδιά.",
-      image: require("../assets/img/wedo.jpg"),
+      image: "img/wedo.jpg",
       body: <VisitBody level="dim" />,
       info: <IconsTable info={visit_dim} />,
     });
@@ -109,7 +109,7 @@ function setDatafromTabs(setData, tab) {
       title: "Γυμνάσιο",
       subtitle:
         "Το πρόγραμμα εκπαιδευτικής ρομποτικής LEGO Mindstorms EV3 αφορά παιδιά ηλικίας από τετάρτη δημοτικού μέχρι ενήλικες και αποτελεί μια ολοκληρωμένη λύση εκπαίδευσης STEM βασισμένη στην τεχνολογία της ρομποτικής.",
-      image: require("../assets/img/ev3.jpg"),
+      image: "img/ev3.jpg",
       body: <VisitBody level="gym" />,
       info: <IconsTable info={visit_gym} />,
     });
@@ -120,7 +120,7 @@ function setDatafromTabs(setData, tab) {
       title: "Λύκειο",
       subtitle:
         "Το εκπαιδευτικό πακέτο LEGO® Education SPIKE ™ είναι το εργαλείο εκμάθησης STEAM για μαθητές ηλικίας 8 έως 11.",
-      image: require("../assets/img/spike.jpg"),
+      image: "img/spike.jpg",
       body: <VisitBody level="lyc" />,
       info: <IconsTable info={visit_lyc} />,
     });

@@ -18,7 +18,7 @@ const Layout = (props: PropsWithChildren<Props>) => {
         <link
           rel="icon"
           type="image/png"
-          href={require("../assets/img/favicon.png")}
+          href="/favicon.png"
         />
       </Head>
       <header>

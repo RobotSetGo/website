@@ -1,8 +1,9 @@
 export const mainSettings = {
-  showSummer: true,
+  showSummer: false,
   showHours: false,
   showVideo: false,
 };
+
 export const heroSettings = {
   title: "Εκπαιδευτική Ρομποτική",
   subtitle:

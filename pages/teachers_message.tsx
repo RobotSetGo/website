@@ -20,7 +20,7 @@ export default function Teachers_Message() {
       <Hero
         title="Προς Εκπαιδευτικούς"
         subtitle=""
-        bgImage={require("../assets/img/teachers_message.jpg")}
+        bgImage="/img/teachers_message.jpg"
         minHeight="60vh"
       />
       <section className="pb-10 bg-white">
