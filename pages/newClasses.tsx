@@ -65,7 +65,7 @@ export default function NewClasses() {
                                         </li>
                                         <li className="mt-6">
                                             <div className="font-bold text-lg">
-                                                MINECRAFT ΗΛΙΚΙΑ 12+ (EXEI ΚΟΣΤΟΣ ΑΔΕΙΑΣ ΛΕΙΤΟΥΡΓΙΑΣ 60
+                                                MINECRAFT ΗΛΙΚΙΑ 8+ (EXEI ΚΟΣΤΟΣ ΑΔΕΙΑΣ ΛΕΙΤΟΥΡΓΙΑΣ 60
                                                 ΕΥΡΩ) .)
                                                 <div>Συμπλήρωσε την φόρμα ενδιαφέροντος:</div>
                                             </div>
