@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import {
   Accordion,
   AccordionHeader,
@@ -19,7 +19,7 @@ function changeInfoAndReturn(
 
 export default function Calendar() {
   const drawerInfo: DrawerInfo[] = [
-    {
+  
       title: "ΣΧΟΛΙΚΗ ΜΕΛΕΤΗ & ΑΠΑΣΧΟΛΗΣΗ ΠΑΙΔΙΩΝ ΔΗΜΟΤΙΚΟΥ",
       description: "",
       open: true,
