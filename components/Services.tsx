@@ -4,7 +4,7 @@ import {
   faChalkboardTeacher,
   faUserFriends,
   faLaptop,
-  faList
+  faList,
 } from "@fortawesome/free-solid-svg-icons";
 import { mainSettings, mainVideo } from "../data/settings";
 import HorizontalLine from "./SubComponents/HorizontalLine";
@@ -20,10 +20,7 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                  <FontAwesomeIcon
-                    icon={faLaptop}
-                    style={{ width: "40px" }}
-                  />
+                  <FontAwesomeIcon icon={faLaptop} style={{ width: "40px" }} />
                 </div>
                 <a href="/distance" className="block text-xl font-semibold">
                   {services.small.left.title}
@@ -58,12 +55,13 @@ export default function Services({ services }) {
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <FontAwesomeIcon
-                    icon={faList}
-                    style={{ width: "40px" }}
-                  />
+                  <FontAwesomeIcon icon={faList} style={{ width: "40px" }} />
                 </div>
-                <a href="https://forms.gle/zUbRdsoSixw4xJGQ7" className="block text-xl font-semibold" target="_blank">
+                <a
+                  href="https://forms.gle/zUbRdsoSixw4xJGQ7"
+                  className="block text-xl font-semibold"
+                  target="_blank"
+                >
                   {services.small.right.title}
                 </a>
                 <p className="mt-2 mb-4 text-gray-600">
@@ -96,7 +94,7 @@ export default function Services({ services }) {
           )}
 
           <div className="w-full">
-            <SeasonalSection season="mid" />
+            <SeasonalSection season="calendar" />
           </div>
         </div>
 
