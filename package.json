@@ -2,6 +2,9 @@
   "name": "next-typescript-scss-tailwind-styledjsx",
   "version": "1.0.0",
   "author": "MeridjaNassim",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "next build",
     "build:static": "next build && next export -o build",

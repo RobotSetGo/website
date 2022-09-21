@@ -5,32 +5,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-type DrawerInfo = { title: string; description: string; open: boolean };
-
-function changeInfoAndReturn(
-  info: DrawerInfo[],
-  element: DrawerInfo
-): DrawerInfo[] {
-  const found = info.findIndex((el) => el === element);
-  if (found) info[found].open = !info[found].open;
-  console.log(info);
-  return info;
-}
-
 export default function Calendar() {
-  const drawerInfo: DrawerInfo[] = [
-  
-      title: "ΣΧΟΛΙΚΗ ΜΕΛΕΤΗ & ΑΠΑΣΧΟΛΗΣΗ ΠΑΙΔΙΩΝ ΔΗΜΟΤΙΚΟΥ",
-      description: "",
-      open: true,
-    },
-    {
-      title: "ΕΚΠΑΙΔΕΥΤΙΚΗ ΡΟΜΠΟΤΙΚΗ ΓΙΑ ΠΑΙΔΙΑ 5-8 ΕΤΩΝ",
-      description: "",
-      open: false,
-    },
-  ];
-
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => {
