@@ -62,6 +62,25 @@ export default function Coding() {
       </section>
 
       <IconsTable info={info} />
+      <section className="pb-10 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center mt-32">
+            <div className="w-full md:w-10/12 px-4 mr-auto ml-auto">
+              <div className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                <div className="pb-6 text-xl">Εργασίες Μαθητών</div>
+                <div>
+                  <a
+                    href="https://reaper-boi.github.io/Geo-marketplace/"
+                    target="_blank"
+                  >
+                    Παγγέας Γιώργος
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
