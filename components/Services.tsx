@@ -10,6 +10,7 @@ import { mainSettings, mainVideo } from "../data/settings";
 import HorizontalLine from "./SubComponents/HorizontalLine";
 import VideoPlayer from "./SubComponents/VideoPlayer";
 import SeasonalSection from "./SubComponents/SeasonalSection";
+import SpecialSection from "./SpecialSection";
 
 export default function Services({ services }) {
   return (
@@ -58,7 +59,7 @@ export default function Services({ services }) {
                   <FontAwesomeIcon icon={faList} style={{ width: "40px" }} />
                 </div>
                 <a
-                  href="https://forms.gle/zUbRdsoSixw4xJGQ7"
+                  href="https://calendly.com/robotsetgo/30min"
                   className="block text-xl font-semibold"
                   target="_blank"
                 >
@@ -71,6 +72,7 @@ export default function Services({ services }) {
             </div>
           </div>
         </div>
+        {mainSettings.hasSpecialSection && <SpecialSection />}
         <div className="flex flex-wrap items-center mt-32 text-center">
           {mainSettings.showHours ? (
             <div className="w-full">

@@ -2,6 +2,7 @@ export const mainSettings = {
   showSummer: false,
   showHours: false,
   showVideo: false,
+  hasSpecialSection: true,
 };
 
 export const heroSettings = {
